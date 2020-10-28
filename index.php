@@ -140,7 +140,7 @@
             <div class="cel-market-price">
                 <p>CEL Market Price</p>
                 <h3 id="cel-price"></h3>
-                <!-- <span>+0.78%</span> -->
+                <span id="cel-price-change"></span>
             </div>
         </div>
     </div>

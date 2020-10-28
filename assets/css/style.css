@@ -1220,6 +1220,12 @@ header nav ul li a {
 	transition: 0.5s;
 }
 
+.metamask-btn:hover {
+	background: #F7923B;
+	color: #fff;
+	transition: .5s;
+}
+
 .icon-doc {
 	display: block;
 	width: 24.73px;
@@ -1239,19 +1245,16 @@ header nav ul li a {
 	background: url('../images/icn-github.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	transition: 0.5s;
 }
 
 .btn-documentation:hover .icon-doc {
-	transform: scaleX(0);
-	transition: 0.5s;
+	background: url('../images/icn-documentation-hover.svg');
 }
 
 .btn-github-repo:hover .icon-github {
-	transform: scaleX(0);
-	transition: 0.5s;
-	background: url('../images/icn-github.svg');
+	background: url('../images/icn-github-hover.svg');
 }
+
 
 #vote {
 	position: relative;

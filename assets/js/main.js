@@ -130,6 +130,18 @@ fetch("https://api.celsius.network/api/v3/web/supported_currencies?fbclid=IwAR3T
 
 
 
+fetch("https://api.coingecko.com/api/v3/coins/celsius-degree-token")
+    .then(data => data.json()).then(result => {
+        document.querySelector("#cel-price-change").innerHTML = upto2Decimal(result.market_data.price_change_24h) + " %";
+        if (Number(result.market_data.price_change_24h) <= -0.01) {
+            document.querySelector("#cel-price-change").style.color = "#f44336";
+        }
+    })
+    .catch(err => {
+        console.log(err);
+    });
+
+
 // fetch("https://api.celsius.network/api/v3/web/supported_currencies?fbclid=IwAR3T4QbarmtKZIKLdmrlqmXAup2j6b6OlE9hOPv6dbZzRnFgwgRIRCQkMo0")
 //     .then(data => data.json()).then(result => result.forEach(function (user) {
 //         console.log(user.custodianTickerSymbol);
