@@ -1,23 +1,49 @@
 <?php include 'inc/dbh.inc.php'; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
         content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+
+    <meta name="description"
+        content="Celswap is an automated market maker decentralized exchange, aiming to provide a seamless way to swap between ERC-20 tokens via CEL">
+    <meta name="keywords" content="CelSwap, Celsius, CEL, Celsians, Celsius Network, Cryptocurrency, ERC20, Ethereum">
+    <meta name="robots" content="noindex" />
+    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
+
+
+    <!-- OpenGraph Protocol -->
+    <meta property="og:title" content="CelSwap">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://celswap.org/">
+    <meta property="og:image" content="assets/images/celswap-open-graph.png">
+    <meta property="og:description"
+        content="Celswap is an automated market maker decentralized exchange, aiming to provide a seamless way to swap between ERC-20 tokens via CEL">
+
+
     <title>CelSwap</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/burger.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Animation on scroll - AOS - Library -->
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+    <link rel="icon" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+
 
     <script>
         // Ajax preventing default form PHP execution
@@ -39,20 +65,21 @@
         <div class="celswap-logo celswap-logo-mobile"></div>
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
+                <li><a class="underline" href="#about">About</a></li>
                 <li>
                     <div class="bullet"></div>
                 </li>
-                <li><a href="#">How it works</a></li>
+                <li><a class="underline" href="#what-is">How it works</a></li>
                 <li>
                     <div class="bullet"></div>
                 </li>
-                <li><a href="#">Developers</a></li>
+                <li><a class="underline" href="#developers">Developers</a></li>
                 <li>
                     <div class="bullet"></div>
                 </li>
-                <li><a href="#">Community</a></li>
-                <li><button class="header-btn">Connect Wallet</button></li>
+                <li><a class="underline" href="#vote">Community</a></li>
+                <li><button class="header-btn" onclick="window.location.href = 'https://app.celswap.org/';">Connect
+                        Wallet</button></li>
             </ul>
         </nav>
 
@@ -68,20 +95,21 @@
     <div class="nav-mobile-modal">
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li>
                     <div class="bullet"></div>
                 </li>
-                <li><a href="#">How it works</a></li>
+                <li><a href="#what-is">How it works</a></li>
                 <li>
                     <div class="bullet"></div>
                 </li>
-                <li><a href="#">Developers</a></li>
+                <li><a href="#developers">Developers</a></li>
                 <li>
                     <div class="bullet"></div>
                 </li>
-                <li><a href="#">Community</a></li>
-                <li><button class="header-btn">Connect Wallet</button></li>
+                <li><a href="#vote">Community</a></li>
+                <li><button class="header-btn" onclick="window.location.href = 'https://app.celswap.org/';">Connect
+                        Wallet</button></li>
             </ul>
         </nav>
     </div>
@@ -98,12 +126,13 @@
 
             <h4>One of the fastest-growing tokens on the market</h4>
 
-            <button class="btn"><span>Launch CelSwap</span></button>
+            <button onclick="window.location.href = 'https://app.celswap.org/';" class="btn"><span>Launch
+                    CelSwap</span></button>
 
             <div class="cel-market-price">
                 <p>CEL Market Price</p>
-                <h3>1.29 USD</h3>
-                <span>+0.78%</span>
+                <h3 id="cel-price"></h3>
+                <!-- <span>+0.78%</span> -->
             </div>
         </div>
     </div>
@@ -113,12 +142,16 @@
             <h1 data-aos="fade-right" data-aos-duration="1000">Available for<br><span>Metamask</span></h1>
             <img src="assets/images/logo-metamask-fox.svg" alt="Metamask Fox" data-aos="fade-in"
                 data-aos-duration="1000">
+            <button onclick="window.location.href = 'https://app.celswap.org/';" class="btn metamask-btn"
+                data-aos="fade-up" data-aos-duration="700">Connect Wallet</button>
         </div>
         <div class="coming-soon">
             <h1 data-aos="fade-left" data-aos-duration="1000">Coming soon for<br><span>Celsius Wallet</span></h1>
             <img src="assets/images/logo-cel-standalone.svg" alt="Celsius Wallet" data-aos="fade-in"
                 data-aos-duration="1000">
-            <h4 data-aos="fade-in" data-aos-duration="500">(as well as Coinbase, Wallet Connect, Fortmatic...)</h4>
+            <h4 data-aos="fade-in" data-aos-duration="500">(as well as <a
+                    href="https://wallet.coinbase.com/">Coinbase</a>, <a href="https://fortmatic.com/">Wallet
+                    Connect</a>, <a href="https://walletconnect.org/">Fortmatic</a>...)</h4>
         </div>
     </div>
 
@@ -238,7 +271,7 @@
             <div class="upper-heading-box">
                 <h1>Why did we <br><span>build CelSwap?</span></h1>
 
-                <p>Celsius is the modern way of managing your finances. Celsians enjoy best reward (interest) rates on
+                <p>Celsius is the modern way of managing your finances. Celsians enjoy best reward rates on
                     their
                     assets. Have easy access to loans backed by crypto and can send assets in seconds with zero fees to
                     other Celsisans.</p>
@@ -272,40 +305,55 @@
             <div class="wrapper">
                 <div class="testimonial">
                     <div class="quote">
-                        <p>I have been using Celsius for over a year, and keep getting my interest in CEL token every
-                            week, which grew A LOT over that time! The interest of 15%+ APY on stablecoins is so much
-                            better than what you can get in any bank, and you can also take a loan, using your crypto as
-                            collateral…</p>
+                        <p>Can't fault it. Using it for 2 years. Great team and project. And getting my interest paid
+                            every Tuesday in Australia time is awesome. The future is bright, how so few know or
+                            understand is beyond me.</p>
                     </div>
                     <div class="person">
-                        <img src="assets/images/testimonials-profile.jpg" alt="WebTrading">
+                        <img src="assets/images/testimonials-profile.jpg" alt="W (Rathfield)">
 
                         <div class="details">
-                            <strong>WebTrading</strong>
+                            <strong>W (Rathfield)</strong>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="quote">
-                        <p>I have been using Celsius for over a year, and keep getting my interest in CEL token every
-                            week, which grew A LOT over that time! The interest of 15%+ APY on stablecoins is so much
-                            better than what you can get in any bank, and you can also take a loan, using your crypto as
-                            collateral…</p>
+                        <p>I've been with Celsius for more than a year, and after trying other competitors I truly think
+                            they are the best. The transparency with their weekly AMAs, as well as the supportive
+                            community are all huge benefits in my mind. And of course, it doesn't help that they are
+                            consistently offering high, sustainable rates! I'm looking forward to being their customer
+                            for many years.</p>
                     </div>
                     <div class="person person-petars">
-                        <img src="assets/images/testimonials-profile.jpg" alt="WebTrading">
+                        <img src="assets/images/testimonials-profile.jpg" alt="Shan McDonell">
 
                         <div class="details">
-                            <strong>WebTrading</strong>
+                            <strong>Shan McDonell</strong>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial current">
                     <div class="quote">
+                        <p>I have been using Celsius for over a year, and keep getting my interest in CEL token every
+                            week, which grew A LOT over that time! The interest of 15%+ APY on stablecoins is so much
+                            better than what you can get in any bank, and you can also take a loan, using your crypto as
+                            a collateral. Never had any issues, and the app is easy to use. Very highly recommended!</p>
+                    </div>
+                    <div class="person">
+                        <img src="assets/images/testimonials-profile.jpg" alt="Web Trading">
+
+                        <div class="details">
+                            <strong>Web Trading</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">
                         <p>Celsius Network may be one of the best projects in crypto with a top notch team. You could
-                            not ask for a better founder than Alex Mashinsky. Always puts the customer first straight
-                            out of Sir Richard Branson playbook. Would
-                            recommend to everyone…</p>
+                            not ask for a better founder than Alex Mashinsky and as good a track record as you will
+                            find. Always puts the customer first straight out of Sir Richard Branson playbook. Would
+                            recommend to everyone to check it out.</p>
                     </div>
                     <div class="person">
                         <img src="assets/images/random-person.jpg" alt="Jimmy Z">
@@ -317,31 +365,17 @@
                 </div>
                 <div class="testimonial">
                     <div class="quote">
-                        <p>I have been using Celsius for over a year, and keep getting my interest in CEL token every
-                            week, which grew A LOT over that time! The interest of 15%+ APY on stablecoins is so much
-                            better than what you can get in any bank, and you can also take a loan, using your crypto as
-                            collateral…</p>
+                        <p>Joined in May 19 and haven’t looked back. Alex Mashinsky changed the world with VOIP and is
+                            doing it again with MOIP (Money Over IP). I’m currently earning 15.89% on US Dollars. You
+                            ask how? It’s simple, Celsius gives back 80% of their revenue to the community every week!
+                            Banks don’t give back to account holders, they give back to shareholders!! Unbank yourself
+                            with Celsius.</p>
                     </div>
                     <div class="person">
-                        <img src="assets/images/testimonials-profile.jpg" alt="WebTrading">
+                        <img src="assets/images/testimonials-profile.jpg" alt="Capitao Nascimento">
 
                         <div class="details">
-                            <strong>WebTrading</strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="quote">
-                        <p>I have been using Celsius for over a year, and keep getting my interest in CEL token every
-                            week, which grew A LOT over that time! The interest of 15%+ APY on stablecoins is so much
-                            better than what you can get in any bank, and you can also take a loan, using your crypto as
-                            collateral…</p>
-                    </div>
-                    <div class="person">
-                        <img src="assets/images/testimonials-profile.jpg" alt="WebTrading">
-
-                        <div class="details">
-                            <strong>WebTrading</strong>
+                            <strong>Capitao Nascimento</strong>
                         </div>
                     </div>
                 </div>
@@ -407,27 +441,178 @@
             <span>to earn the best reward rates!</span>
         </h1>
 
+        <div class="container">
+            <div class="carousel">
+                <div class="arrow nav-left">
+                    <div class="ion-chevron-left carousel-arrow-icon-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="15" height="15">
+                            <path
+                                d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
 
-        <div class="splide splide-container splide-2">
-            <div class="splide__track">
-                <ul id="splide--container" class="splide__list">
-                    <li class="splide__slide rates-li-slide"></li>
-                    <li class="splide__slide rates-li-slide"></li>
-                    <li class="splide__slide rates-li-slide"></li>
-                    <li class="splide__slide rates-li-slide"></li>
-                    <li class="splide__slide rates-li-slide"></li>
-                    <li class="splide__slide rates-li-slide"></li>
-                    <li class="splide__slide rates-li-slide"></li>
-                    <li class="splide__slide rates-li-slide"></li>
-                    <li class="splide__slide rates-li-slide"></li>
-                </ul>
+                <div class="carousel-content">
+
+                    <div class="slide-rates slide-1">
+                        <div class="carousel-slide-upper">
+                            <div class="carousel-slide-img"></div>
+                            <div class="rates-slide-heading"></div>
+                        </div>
+                        <div class="carousel-slide-down">
+                            <div class="in-cel-container">
+                                <span class="rates-value-cel-percentage"></span>
+                                <span class="in-cel">in CEL</span>
+                            </div>
+                            <div class="in-kind-container">
+                                <span class="rates-value-in-kind-percentage"></span>
+                                <span class="in-kind">in-kind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-rates slide-2">
+                        <div class="carousel-slide-upper">
+                            <div class="carousel-slide-img"></div>
+                            <div class="rates-slide-heading"></div>
+                        </div>
+                        <div class="carousel-slide-down">
+                            <div class="in-cel-container">
+                                <span class="rates-value-cel-percentage"></span>
+                                <span class="in-cel">in CEL</span>
+                            </div>
+                            <div class="in-kind-container">
+                                <span class="rates-value-in-kind-percentage"></span>
+                                <span class="in-kind">in-kind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-rates slide-3">
+                        <div class="carousel-slide-upper">
+                            <div class="carousel-slide-img"></div>
+                            <div class="rates-slide-heading"></div>
+                        </div>
+                        <div class="carousel-slide-down">
+                            <div class="in-cel-container">
+                                <span class="rates-value-cel-percentage"></span>
+                                <span class="in-cel">in CEL</span>
+                            </div>
+                            <div class="in-kind-container">
+                                <span class="rates-value-in-kind-percentage"></span>
+                                <span class="in-kind">in-kind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-rates slide-4">
+                        <div class="carousel-slide-upper">
+                            <div class="carousel-slide-img"></div>
+                            <div class="rates-slide-heading"></div>
+                        </div>
+                        <div class="carousel-slide-down">
+                            <div class="in-cel-container">
+                                <span class="rates-value-cel-percentage"></span>
+                                <span class="in-cel">in CEL</span>
+                            </div>
+                            <div class="in-kind-container">
+                                <span class="rates-value-in-kind-percentage"></span>
+                                <span class="in-kind">in-kind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-rates slide-5">
+                        <div class="carousel-slide-upper">
+                            <div class="carousel-slide-img"></div>
+                            <div class="rates-slide-heading"></div>
+                        </div>
+                        <div class="carousel-slide-down">
+                            <div class="in-cel-container">
+                                <span class="rates-value-cel-percentage"></span>
+                                <span class="in-cel">in CEL</span>
+                            </div>
+                            <div class="in-kind-container">
+                                <span class="rates-value-in-kind-percentage"></span>
+                                <span class="in-kind">in-kind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-rates slide-5">
+                        <div class="carousel-slide-upper">
+                            <div class="carousel-slide-img"></div>
+                            <div class="rates-slide-heading"></div>
+                        </div>
+                        <div class="carousel-slide-down">
+                            <div class="in-cel-container">
+                                <span class="rates-value-cel-percentage"></span>
+                                <span class="in-cel">in CEL</span>
+                            </div>
+                            <div class="in-kind-container">
+                                <span class="rates-value-in-kind-percentage"></span>
+                                <span class="in-kind">in-kind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-rates slide-5">
+                        <div class="carousel-slide-upper">
+                            <div class="carousel-slide-img"></div>
+                            <div class="rates-slide-heading"></div>
+                        </div>
+                        <div class="carousel-slide-down">
+                            <div class="in-cel-container">
+                                <span class="rates-value-cel-percentage"></span>
+                                <span class="in-cel">in CEL</span>
+                            </div>
+                            <div class="in-kind-container">
+                                <span class="rates-value-in-kind-percentage"></span>
+                                <span class="in-kind">in-kind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-rates slide-5">
+                        <div class="carousel-slide-upper">
+                            <div class="carousel-slide-img"></div>
+                            <div class="rates-slide-heading"></div>
+                        </div>
+                        <div class="carousel-slide-down">
+                            <div class="in-cel-container">
+                                <span class="rates-value-cel-percentage"></span>
+                                <span class="in-cel">in CEL</span>
+                            </div>
+                            <div class="in-kind-container">
+                                <span class="rates-value-in-kind-percentage"></span>
+                                <span class="in-kind">in-kind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="arrow nav-right">
+                    <div class="ion-chevron-right carousel-arrow-icon-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="15" height="15">
+                            <path
+                                d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="rates-buttons">
-            <button class="btn btn-rates btn-appstore"><img src="assets/images/icn-apple.svg"
+            <button onclick="window.open('https://apps.apple.com/ca/app/celsius-network-crypto-wallet/id1387885523 ');"
+                class="btn btn-rates btn-appstore"><img src="assets/images/icn-apple.svg"
                     alt=""><span>AppleStore</span></button>
-            <button class="btn btn-rates btn-googleplay"><img src="assets/images/icn-playstore.svg" alt=""><span>Google
+
+            <button
+                onclick="window.open('https://play.google.com/store/apps/details?id=network.celsius.wallet&hl=en_US&gl=US');"
+                class="btn btn-rates btn-googleplay"><img src="assets/images/icn-playstore.svg" alt=""><span>Google
                     Play</span></button>
         </div>
 
@@ -436,19 +621,25 @@
     <footer>
         <div class="footer-contact">Drop us a line at <u><strong>weare@celswap.org</strong></u></div>
         <div class="footer-social-media">
-            <img src="assets/images/icn-twitter.svg" alt="">
-            <img src="assets/images/icn-fb.svg" alt="">
-            <img src="assets/images/icn-ig.png" alt="">
-            <img src="assets/images/icn-telegram.png" alt="" style="width: 26.17px; height: 22px;">
-            <img src="assets/images/icn-yt.png" alt="">
-            <span>FAQ</span>
+            <span>Follow us: </span>
+            <a href="https://twitter.com/celsiusnetwork" target="_blank"><img src="assets/images/icn-twitter.svg"
+                    alt=""></a>
+            <a href="https://www.facebook.com/CelsiusNetwork/" target="_blank"><img src="assets/images/icn-fb.svg"
+                    alt=""></a>
+            <a href="https://www.instagram.com/celsiusnetwork/" target="_blank"><img src="assets/images/icn-ig.png"
+                    alt=""></a>
+            <a href="https://www.linkedin.com/company/celsiusnetwork/" target="_blank"><img
+                    src="assets/images/icn-telegram.png" alt="" style="width: 26.17px; height: 22px;"></a>
+            <a href="https://www.youtube.com/channel/UC3yZY7UVs-zPKBuyNuPinbQ" target="_blank"><img
+                    src="assets/images/icn-yt.png" alt=""></a>
+            <a href="#">FAQ</a>
         </div>
     </footer>
 
-
+    <script src="assets/js/carousel.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/testimonials-slider.js"></script>
     <script src="assets/js/splideSlider.js"></script>
+    <script src="assets/js/testimonials-slider.js"></script>
 
     <script>
         AOS.init();

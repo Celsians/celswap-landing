@@ -40,8 +40,12 @@
 	var isSetIp = "<?php echo $isSetIp; ?>";
 	if(isSetIp == true) {
 		$(".notification-box").html("<p style='padding: 10px 20px;'>You've already voted.</p>");
+		setTimeout(function() {
+			$(".notification-box").css("opacity", "0");
+			$(".notification-box").css("cursor", "default");
+		}, 2000)
 	}
 	else {
-		$(".notification-box").html("<p style='padding: 10px 20px;'>Successfully voted.</p>");
+		$(".voted").addClass("animateVoted");
 	}
 </script>

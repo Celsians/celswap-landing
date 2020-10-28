@@ -80,7 +80,7 @@
     }
 
     function size() {
-        if (window.innerWidth < 1000) {
+        if (window.innerWidth < 1200) {
             width = window.innerWidth - 60;
         } else {
             width = 800;

@@ -39,7 +39,6 @@ voteBtn.addEventListener("click", function () {
     voteBtn.style.background = "linear-gradient(45deg, #3228b5 0%, #151a76 100%)";
     voteBtn.style.transition = ".7s";
 
-    votedBox.classList.add("animateVoted");
 
     voteBtnFire.classList.remove("vote-btn-fire");
     voteBtnFire.classList.add("vote-btn-fire-active");
@@ -105,29 +104,23 @@ fetch("https://api.celsius.network/api/v3/web/supported_currencies?fbclid=IwAR3T
     .then(result => result.json()).then(data => {
         let output = '';
         let i = 0;
-        const ratesSlide = document.querySelectorAll(".rates-li-slide");
+        const ratesSlideHeading = document.querySelectorAll(".rates-slide-heading");
+        const ratesSlideImg = document.querySelectorAll(".carousel-slide-img");
+        const celPercentage = document.querySelectorAll(".rates-value-cel-percentage");
+        const inKindPercentage = document.querySelectorAll(".rates-value-in-kind-percentage");
+        const ratesSlide = document.querySelectorAll(".carousel-content");
         data.forEach(function (crypto) {
-            if (crypto.name == "BTC" || crypto.name == "ETH" || crypto.name == "CEL" || crypto.name == "SNX" || crypto.name == "BUSD" || crypto.name == "UNI" || crypto.name == "DAI" || crypto.name == "USDT" || crypto.name == "USDC") {
-                output = `
-                            <div class="rates-slide">
-                            <div class="rates-slide-logo">
-                                <img src="assets/images/coins/${crypto.name}-icon.png">
-                                <span class="rates-slide-heading btc-heading">${crypto.name}</span>
-                            </div>
-                            <div class="rates-slide-value">
-                                <div class="rates-value-cel">
-                                    <span class="rates-value-cel-percentage">${upto2Decimal((Math.pow(1 + (1 + 0.3) * crypto.interestRate / 52, 52) - 1) * 100) + "%"}</span>
-                                    <span class="in-cel">in CEL</span>
-                                </div>
-                                <div class="rates-value-in-kind">
-                                <span class="rates-value-in-kind-percentage">${upto2Decimal((Math.pow(1 + (1 + 0) * crypto.interestRate / 52, 52) - 1) * 100) + "%"}</span>
-                                    <span class="in-kind">in-kind</span>
-                                </div>
-                            </div>
-                        </div>
-               `;
-                ratesSlide[i].innerHTML = output;
+            if (crypto.name == "BTC" || crypto.name == "ETH" || crypto.name == "USDC" || crypto.name == "CEL" || crypto.name == "SNX" || crypto.name == "BUSD" || crypto.name == "UNI" || crypto.name == "TUSD") {
+                ratesSlideHeading[i].innerHTML = crypto.name;
+                ratesSlideImg[i].innerHTML = `<img src='assets/images/coins/${crypto.name}-icon.png'>`;
+                celPercentage[i].innerHTML = upto2Decimal((Math.pow(1 + (1 + 0.3) * crypto.interestRate / 52, 52) - 1) * 100) + "%";
+                inKindPercentage[i].innerHTML = upto2Decimal((Math.pow(1 + (1 + 0) * crypto.interestRate / 52, 52) - 1) * 100) + "%";
+
+                console.log(crypto.name + "\n" + crypto.interestRate);
                 i++;
+            }
+            if (crypto.name == "CEL") {
+                document.querySelector("#cel-price").innerHTML = upto2Decimal(crypto.usd) + " USD";
             }
         });
     })
@@ -167,3 +160,40 @@ fetch("https://api.celsius.network/api/v3/web/supported_currencies?fbclid=IwAR3T
 //     });
 
 
+
+
+//BACKUP SLIDER CRYPTO
+
+// fetch("https://api.celsius.network/api/v3/web/supported_currencies?fbclid=IwAR3T4QbarmtKZIKLdmrlqmXAup2j6b6OlE9hOPv6dbZzRnFgwgRIRCQkMo0")
+//     .then(result => result.json()).then(data => {
+//         let output = '';
+//         let i = 0;
+//         const ratesSlide = document.querySelectorAll(".rates-li-slide");
+//         data.forEach(function (crypto) {
+//             if (crypto.name == "BTC" || crypto.name == "ETH" || crypto.name == "CEL" || crypto.name == "SNX" || crypto.name == "BUSD" || crypto.name == "UNI" || crypto.name == "DAI" || crypto.name == "USDT" || crypto.name == "USDC") {
+//                 output = `
+//                             <div class="rates-slide">
+//                             <div class="rates-slide-logo">
+//                                 <img src="assets/images/coins/${crypto.name}-icon.png">
+//                                 <span class="rates-slide-heading btc-heading">${crypto.name}</span>
+//                             </div>
+//                             <div class="rates-slide-value">
+//                                 <div class="rates-value-cel">
+//                                     <span class="rates-value-cel-percentage">${upto2Decimal((Math.pow(1 + (1 + 0.3) * crypto.interestRate / 52, 52) - 1) * 100) + "%"}</span>
+//                                     <span class="in-cel">in CEL</span>
+//                                 </div>
+//                                 <div class="rates-value-in-kind">
+//                                 <span class="rates-value-in-kind-percentage">${upto2Decimal((Math.pow(1 + (1 + 0) * crypto.interestRate / 52, 52) - 1) * 100) + "%"}</span>
+//                                     <span class="in-kind">in-kind</span>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                `;
+//                 ratesSlide[i].innerHTML = output;
+//                 i++;
+//             }
+//         });
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     });
