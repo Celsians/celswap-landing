@@ -397,9 +397,9 @@
             back to the community. Join us and help give
             back at <span>weare@celswap.org</span></p>
         <div class="developers-links">
-            <button class="btn btn-documentation" data-aos="fade-up" data-aos-duration="700"><span
+            <button onclick="window.open('https://github.com/Celsians/celswap-core');" class="btn btn-documentation" data-aos="fade-up" data-aos-duration="700"><span
                     class="icon-doc"></span>Documentation</button>
-            <button class="btn btn-github-repo" data-aos="fade-up" data-aos-duration="1000"><span
+            <button onclick="window.open('https://github.com/Celsians');" class="btn btn-github-repo" data-aos="fade-up" data-aos-duration="1000"><span
                     class="icon-github"></span> GitHub Repo</button>
         </div>
     </div>
@@ -418,13 +418,13 @@
                 <div class="votes">
                     <div class="voted">+1</div>
                     <div class="num-votes">
-                        <?php
+                        <b><?php
                             $sql = "SELECT vote_id FROM votes ORDER BY vote_id DESC";
                             $stmt = $conn->prepare($sql);
                             $stmt->execute();
                             $result = $stmt->fetchAll();
                             echo $result[0]['vote_id']; 
-                        ?>
+                        ?></b>
                     </div>
                     <div class="vote-btn">
                         <h3>hell yeah!</h3>
