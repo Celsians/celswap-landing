@@ -221,7 +221,7 @@
         <div class="splide splide-container splide-1">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide" style="display:none;">
+                    <li class="splide__slide">
                         <div class="slide slide1">
                             <h3>In the future anyone will be able to add <span>liquidity</span></h3>
 
