@@ -221,7 +221,7 @@ ga('send', 'pageview');
         <div class="splide splide-container splide-1">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide">
+                    <li class="splide__slide" style="display:none;">
                         <div class="slide slide1">
                             <h3>Anyone can add <span>liquidity</span></h3>
 
