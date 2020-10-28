@@ -440,6 +440,10 @@ header nav ul li a {
 	margin-top: 118px;
 }
 
+.coming-soon h4 a:hover{
+	text-decoration: underline;
+}
+
 #about {
 	position: relative;
 	width: 100vw;
