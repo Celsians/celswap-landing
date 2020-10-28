@@ -1250,6 +1250,7 @@ header nav ul li a {
 .btn-github-repo:hover .icon-github {
 	transform: scaleX(0);
 	transition: 0.5s;
+	background: url('../images/icn-github.svg');
 }
 
 #vote {

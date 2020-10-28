@@ -24,7 +24,15 @@
 
 
     <title>CelSwap</title>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+ga('create', 'UA-73252108-7', 'auto');
+ga('send', 'pageview');
+</script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/burger.css">
     <link rel="stylesheet" href="assets/css/carousel.css">
@@ -423,7 +431,7 @@
                             $stmt = $conn->prepare($sql);
                             $stmt->execute();
                             $result = $stmt->fetchAll();
-                            echo $result[0]['vote_id']; 
+                            echo $result[0]['vote_id'];
                         ?>
                     </div>
                     <div class="vote-btn">
