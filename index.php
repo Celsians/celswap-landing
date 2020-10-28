@@ -24,7 +24,15 @@
 
 
     <title>CelSwap</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-298MMHHR74"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-298MMHHR74');
+</script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/burger.css">
     <link rel="stylesheet" href="assets/css/carousel.css">
@@ -213,7 +221,7 @@
         <div class="splide splide-container splide-1">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide">
+                    <li class="splide__slide" style="display:none;">
                         <div class="slide slide1">
                             <h3>In the future anyone will be able to add <span>liquidity</span></h3>
 
@@ -423,7 +431,7 @@
                             $stmt = $conn->prepare($sql);
                             $stmt->execute();
                             $result = $stmt->fetchAll();
-                            echo $result[0]['vote_id']; 
+                            echo $result[0]['vote_id'];
                         ?>
                     </div>
                     <div class="vote-btn">

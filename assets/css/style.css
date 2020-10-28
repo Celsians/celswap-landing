@@ -440,6 +440,10 @@ header nav ul li a {
 	margin-top: 118px;
 }
 
+.coming-soon h4 a:hover{
+	text-decoration: underline;
+}
+
 #about {
 	position: relative;
 	width: 100vw;
@@ -1246,6 +1250,7 @@ header nav ul li a {
 .btn-github-repo:hover .icon-github {
 	transform: scaleX(0);
 	transition: 0.5s;
+	background: url('../images/icn-github.svg');
 }
 
 #vote {
@@ -1654,6 +1659,10 @@ footer {
 
 .footer-social-media span {
 	margin-right: 20px;
+}
+
+.footer-social-media a:hover {
+	opacity: 0.5;
 }
 
 @media (min-width: 1440px) and (max-width: 1600px) {
