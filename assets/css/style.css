@@ -1660,6 +1660,10 @@ footer {
 	margin-right: 20px;
 }
 
+.footer-social-media a:hover {
+	opacity: 0.5;
+}
+
 @media (min-width: 1440px) and (max-width: 1600px) {
 	header {
 		padding: 47px 280px 0 240px;
