@@ -215,7 +215,7 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="slide slide1">
-                            <h3>Anyone can add <span>liquidity</span></h3>
+                            <h3>In the future anyone will be able to add <span>liquidity</span></h3>
 
                             <div class="icon1"></div>
                             <div class="circle"></div>
@@ -247,7 +247,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="slide slide5">
-                            <h3>Get <span>rewarded</span> for providing liquidity</h3>
+                            <h3>In the future you will be <span>rewarded</span> for providing liquidity</h3>
 
                             <div class="icon5"></div>
                             <div class="circle"></div>
