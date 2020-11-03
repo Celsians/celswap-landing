@@ -313,77 +313,61 @@
             <div class="wrapper">
                 <div class="testimonial">
                     <div class="quote">
-                        <p>Can't fault it. Using it for 2 years. Great team and project. And getting my interest paid
-                            every Tuesday in Australia time is awesome. The future is bright, how so few know or
-                            understand is beyond me.</p>
+                        <p>Why all this???</p>
                     </div>
                     <div class="person">
                         <img src="assets/images/testimonials-profile.jpg" alt="W (Rathfield)">
 
                         <div class="details">
-                            <strong>W (Rathfield)</strong>
+                            <strong>Guy filling LP form</strong>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="quote">
-                        <p>I've been with Celsius for more than a year, and after trying other competitors I truly think
-                            they are the best. The transparency with their weekly AMAs, as well as the supportive
-                            community are all huge benefits in my mind. And of course, it doesn't help that they are
-                            consistently offering high, sustainable rates! I'm looking forward to being their customer
-                            for many years.</p>
+                        <p>thank u</p>
                     </div>
                     <div class="person person-petars">
                         <img src="assets/images/testimonials-profile.jpg" alt="Shan McDonell">
 
                         <div class="details">
-                            <strong>Shan McDonell</strong>
+                            <strong>Other guy filling LP form</strong>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial current">
                     <div class="quote">
-                        <p>I have been using Celsius for over a year, and keep getting my interest in CEL token every
-                            week, which grew A LOT over that time! The interest of 15%+ APY on stablecoins is so much
-                            better than what you can get in any bank, and you can also take a loan, using your crypto as
-                            a collateral. Never had any issues, and the app is easy to use. Very highly recommended!</p>
+                        <p>I am very committed in the long term to make this project sustainable.</p>
                     </div>
                     <div class="person">
                         <img src="assets/images/testimonials-profile.jpg" alt="Web Trading">
 
                         <div class="details">
-                            <strong>Web Trading</strong>
+                            <strong>Also a guy from form</strong>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="quote">
-                        <p>Celsius Network may be one of the best projects in crypto with a top notch team. You could
-                            not ask for a better founder than Alex Mashinsky and as good a track record as you will
-                            find. Always puts the customer first straight out of Sir Richard Branson playbook. Would
-                            recommend to everyone to check it out.</p>
+                        <p>Great initiative. </p>
                     </div>
                     <div class="person">
                         <img src="assets/images/random-person.jpg" alt="Jimmy Z">
 
                         <div class="details">
-                            <strong>Jimmy Z</strong>
+                            <strong>Jean</strong>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="quote">
-                        <p>Joined in May 19 and haven’t looked back. Alex Mashinsky changed the world with VOIP and is
-                            doing it again with MOIP (Money Over IP). I’m currently earning 15.89% on US Dollars. You
-                            ask how? It’s simple, Celsius gives back 80% of their revenue to the community every week!
-                            Banks don’t give back to account holders, they give back to shareholders!! Unbank yourself
-                            with Celsius.</p>
+                        <p>I also have Celsius wallet you can verify through my email address. Is the metamask address the correct address you are requesting. This is all very new to me. Thank you</p>
                     </div>
                     <div class="person">
                         <img src="assets/images/testimonials-profile.jpg" alt="Capitao Nascimento">
 
                         <div class="details">
-                            <strong>Capitao Nascimento</strong>
+                            <strong>Random LP</strong>
                         </div>
                     </div>
                 </div>
