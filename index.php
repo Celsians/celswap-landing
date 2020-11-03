@@ -617,7 +617,7 @@
 
     <footer>
         <div class="footer-contact">Drop us a line at <u><a href="mailto:weare@celswap.org"><strong>weare@celswap.org</strong></a></u></div>
-        <div class="footer-social-media">
+/*         <div class="footer-social-media">
             <span>Follow us: </span>
             <a href="https://twitter.com/celsiusnetwork" target="_blank"><img src="assets/images/icn-twitter.svg"
                     alt=""></a>
@@ -630,7 +630,7 @@
             <a href="https://www.youtube.com/channel/UC3yZY7UVs-zPKBuyNuPinbQ" target="_blank"><img
                     src="assets/images/icn-yt.png" alt=""></a>
             <a href="#">FAQ</a>
-        </div>
+        </div> */
     </footer>
 
     <script src="assets/js/carousel.js"></script>
