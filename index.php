@@ -287,7 +287,7 @@
             <div class="down-heading-box">
                 <h3>If you choose to earn in CEL tokens, inside of Celsius App, the rates increase up to 30% based on the percentage of
                                         CEL tokens in your wallet</h3>
-                <p>This means that suddenly there can be people who have more CEL tokens than they want, simply because they can earn hire. CelSwap is here to absorb those tokens, either by having them in LP or being swapped for some other token and vice versa. </p>
+                <p>This means that suddenly there can be people who have more CEL tokens than they want, simply because they can earn more with them. CelSwap is here to absorb those tokens, either by having them in LP or being swapped for some other token and vice versa. </p>
             </div>
             <div class="down-image-box"></div>
         </div>
