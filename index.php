@@ -330,6 +330,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="testimonial">
+                    <div class="quote">
+                        <p>I also have Celsius wallet you can verify through my email address. Is the metamask address the correct address you are requesting. This is all very new to me. Thank you</p>
+                    </div>
+                    <div class="person">
+                        <img src="assets/images/testimonials-profile.jpg" alt="Capitao Nascimento">
+
+                        <div class="details">
+                            <strong>Wannabe LP</strong>
+                        </div>
+                    </div>
+                </div>
                 <div class="testimonial current">
                     <div class="quote">
                         <p>I am very committed in the long term to make this project sustainable.</p>
@@ -351,18 +363,6 @@
 
                         <div class="details">
                             <strong>Jean</strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="quote">
-                        <p>I also have Celsius wallet you can verify through my email address. Is the metamask address the correct address you are requesting. This is all very new to me. Thank you</p>
-                    </div>
-                    <div class="person">
-                        <img src="assets/images/testimonials-profile.jpg" alt="Capitao Nascimento">
-
-                        <div class="details">
-                            <strong>Wannabe LP</strong>
                         </div>
                     </div>
                 </div>
