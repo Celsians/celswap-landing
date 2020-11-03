@@ -130,7 +130,7 @@
         <div class="heading-section">
             <h1>Seamless way
                 <br>
-                <span>to swap CEL</span></h1>
+                <span>to swap via CEL</span></h1>
 
             <h4>One of the fastest-growing tokens on the market</h4>
 
