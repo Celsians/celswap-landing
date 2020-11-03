@@ -279,20 +279,15 @@
             <div class="upper-heading-box">
                 <h1>Why did we <br><span>build CelSwap?</span></h1>
 
-                <p>Celsius is the modern way of managing your finances. Celsians enjoy best reward rates on
-                    their
-                    assets. Have easy access to loans backed by crypto and can send assets in seconds with zero fees to
-                    other Celsisans.</p>
+                <p>Because, in the world of BTC and ETH, we still believe that CEL token can be base currency and this is one of forms we want to validate that assumption.</p>
             </div>
             <div class="upper-image-box"></div>
         </div>
         <div class="down-container">
             <div class="down-heading-box">
-                <h3>Mission of Celsius is to bring unprecedented financial freedom to its users by giving back
-                    <strong>80% of the earnings</strong> to the community every week.</h3>
-                <p>As a result, Celsians can earn some of the best rates in industry on their crypto transfers to the
-                    app. Should you choose to earn in CEL tokens the rates increase up to 30% based on the percentage of
-                    CEL tokens in your wallet.</p>
+                <h3>If you choose to earn in CEL tokens, inside of Celsius App, the rates increase up to 30% based on the percentage of
+                                        CEL tokens in your wallet</h3>
+                <p>This means that suddenly there can be people who have more CEL tokens than they want, simply because they can earn hire. CelSwap is here to absorb those tokens, either by having them in LP or being swapped for some other token and vice versa. </p>
             </div>
             <div class="down-image-box"></div>
         </div>
