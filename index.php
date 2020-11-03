@@ -333,7 +333,9 @@
                 <div class="testimonial">
                     <div class="quote">
                         <p>I also have Celsius wallet you can verify through my email address. Is the metamask address the correct address you are requesting. This is all very new to me. Thank you</p>
+                        <p><i><br>*we don't have because we are CelSwapp AMM, not Celsius app...</i></p>
                     </div>
+
                     <div class="person">
                         <img src="assets/images/testimonials-profile.jpg" alt="Capitao Nascimento">
 
@@ -359,7 +361,7 @@
                         <p>Great initiative. </p>
                     </div>
                     <div class="person">
-                        <img src="assets/images/random-person.jpg" alt="Jimmy Z">
+                        <img src="assets/images/testimonials-profile.jpg" alt="Jimmy Z">
 
                         <div class="details">
                             <strong>Jean</strong>
