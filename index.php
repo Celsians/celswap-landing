@@ -613,17 +613,6 @@
             </div>
         </div>
 
-        <div class="rates-buttons">
-            <button onclick="window.open('https://apps.apple.com/ca/app/celsius-network-crypto-wallet/id1387885523 ');"
-                class="btn btn-rates btn-appstore"><img src="assets/images/icn-apple.svg"
-                    alt=""><span>AppleStore</span></button>
-
-            <button
-                onclick="window.open('https://play.google.com/store/apps/details?id=network.celsius.wallet&hl=en_US&gl=US');"
-                class="btn btn-rates btn-googleplay"><img src="assets/images/icn-playstore.svg" alt=""><span>Google
-                    Play</span></button>
-        </div>
-
     </div>
 
     <footer>
