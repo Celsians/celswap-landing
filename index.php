@@ -367,7 +367,7 @@
                         <img src="assets/images/testimonials-profile.jpg" alt="Capitao Nascimento">
 
                         <div class="details">
-                            <strong>Random LP</strong>
+                            <strong>Wannabe LP</strong>
                         </div>
                     </div>
                 </div>
