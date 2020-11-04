@@ -841,7 +841,7 @@ header nav ul li a {
 	width: 100vw;
 	padding-top: 125px;
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
