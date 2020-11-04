@@ -839,12 +839,12 @@ header nav ul li a {
 
 .down-container {
 	width: 100vw;
-	padding-right: 400px;
 	padding-top: 125px;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	align-items: center;
+	text-align: center;
 }
 
 .down-heading-box {

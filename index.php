@@ -289,7 +289,7 @@
                                         CEL tokens in your wallet</h3>
                 <p>This means that suddenly there can be people who have more CEL tokens than they want, simply because they can earn more with them. CelSwap is here to absorb those tokens, either by having them in LP or being swapped for some other token and vice versa. </p>
             </div>
-            <div class="down-image-box"></div>
+//             <div class="down-image-box"></div>
         </div>
         <div class="circles-container">
             <div class="small-circle"></div>
