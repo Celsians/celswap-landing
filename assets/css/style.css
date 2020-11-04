@@ -866,6 +866,11 @@ header nav ul li a {
 	color: #0f1e6c;
 }
 
+.down-heading-box h3 p{
+	font-size: 60px;
+	margin-bottom: 23px;
+}
+
 .down-image-box {
 	width: calc(826px / 1.18);
 	height: 767.38px;
