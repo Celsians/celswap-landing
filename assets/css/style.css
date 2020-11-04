@@ -880,6 +880,7 @@ header nav ul li a {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-family: 'Pangram-ExtraBold', sans-serif;
 
 }
 .down-heading-box p.reason{
