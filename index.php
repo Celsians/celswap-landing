@@ -9,13 +9,12 @@
 
     <meta name="description"
         content="Celswap is an automated market maker decentralized exchange, aiming to provide a seamless way to swap between ERC-20 tokens via CEL">
-    <meta name="keywords" content="CelSwap, Celsius, CEL, Celsians, Celsius Network, Cryptocurrency, ERC20, Ethereum">
-    <meta name="robots" content="noindex" />
+    <meta name="keywords" content="CelSwap, Celsius, CEL, Celsians, Celsius Network, Cryptocurrency, ERC20, Ethereum, cel tokens, wallet swap coins, swap coins trustlessly">
     <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
 
 
     <!-- OpenGraph Protocol -->
-    <meta property="og:title" content="CelSwap">
+    <meta property="og:title" content="Celswap - By Community For Community">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://celswap.org/">
     <meta property="og:image" content="assets/images/celswap-open-graph.png">
