@@ -870,7 +870,9 @@ header nav ul li a {
 	font-size: 60px;
 	margin-bottom: 23px;
 }
-
+.down-heading-box h3 p.reason{
+	margin-top: 43px;
+}
 .down-image-box {
 	width: calc(826px / 1.18);
 	height: 767.38px;
