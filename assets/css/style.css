@@ -852,7 +852,7 @@ header nav ul li a {
 	margin-top: 50px;
 }
 
-.down-heading-box .above30{
+.down-heading-box .above30 span{
 	font-size: 31px;
 	font-weight: normal;
 }
@@ -874,8 +874,12 @@ header nav ul li a {
 
 .down-heading-box h3 p{
 	font-size: 61px;
-	font-weight: 800;
+	font-weight: 900;
 	margin-bottom: 23px;
+	background: linear-gradient(#3228b5 0%, #151a76 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 
 }
 .down-heading-box p.reason{
