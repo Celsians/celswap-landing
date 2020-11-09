@@ -80,7 +80,7 @@
                 <li>
                     <div class="bullet"></div>
                 </li>
-                <li><a class="underline" href="https://docs.google.com/document/d/1zYhB7U0eYOBy3Bhiuk3bcdrW-8d6BOw4i7FRYSG6Xv0/edit?usp=sharing">FAQ</a></li>
+                <li><a class="underline" href="https://docs.google.com/document/d/1zYhB7U0eYOBy3Bhiuk3bcdrW-8d6BOw4i7FRYSG6Xv0/edit?usp=sharing" target="_blank">FAQ</a></li>
                 <li>
                     <div class="bullet"></div>
                 </li>
