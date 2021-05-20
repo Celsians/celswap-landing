@@ -381,8 +381,7 @@
         <h3 data-aos="fade-right" data-aos-duration="1000">We are a small team of Celsians dedicated to giving back to
             the community!</h3>
         <p data-aos="fade-right" data-aos-duration="1000">We are always looking for more like-minded developers to give
-            back to the community. Join us and help give
-            back at <span><a href="mailto:weare@celswap.org">weare@celswap.org</a></span></p>
+            back to the community. </p>
         <div class="developers-links">
             <button onclick="window.open('https://github.com/Celsians/celswap-core');" class="btn btn-documentation" data-aos="fade-up" data-aos-duration="700"><span
                     class="icon-doc"></span>Documentation</button>
@@ -423,10 +422,6 @@
         <div class="notification-box"></div>
     </div>
 
-
-    <footer>
-        <div class="footer-contact">Drop us a line at <u><a href="mailto:weare@celswap.org"><strong>weare@celswap.org</strong></a></u></div>
-    </footer>
 
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/main.js"></script>
